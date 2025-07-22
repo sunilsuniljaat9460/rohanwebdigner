@@ -1,0 +1,77 @@
+/* ========== Footer Styles ========== */
+.site-footer {
+  background: linear-gradient(to right, #222, #333);
+  color: #fff;
+  padding: 40px 20px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  gap: 20px;
+}
+
+.footer-left h3 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.footer-left p {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.footer-center a {
+  margin: 0 10px;
+  color: #ccc;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-center a:hover {
+  color: #fff;
+}
+
+.footer-right a img {
+  width: 28px;
+  margin: 0 8px;
+  filter: brightness(0.9);
+  transition: transform 0.3s ease;
+}
+
+.footer-right a:hover img {
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  border-top: 1px solid #444;
+  margin-top: 30px;
+  padding-top: 10px;
+  font-size: 13px;
+  position: relative;
+}
+
+#scrollTopBtn {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  background-color: #ff69b4;
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+#scrollTopBtn:hover {
+  background-color: #ff4081;
+}

@@ -1,0 +1,16 @@
+/* responsive.css */
+@media (max-width: 768px) {
+  .hero-content, .about-container, .contact-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-image img {
+    max-width: 200px;
+    margin-bottom: 1rem;
+  }
+}

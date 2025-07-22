@@ -1,0 +1,90 @@
+/* home.css */
+
+.home-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 20px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0f0f0, #fafafa);
+}
+
+.home-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.text-area {
+  flex: 1;
+  padding: 20px;
+}
+
+.text-area h1,
+.text-area h2,
+.text-area p {
+  margin: 10px 0;
+  opacity: 0;
+  transform: scale(0.8);
+  animation: zoomIn 1s forwards;
+}
+
+.text-area h2.delay {
+  animation-delay: 0.3s;
+}
+.text-area p.delay2 {
+  animation-delay: 0.6s;
+}
+
+.image-area {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.image-area img {
+  max-width: 100%;
+  height: auto;
+  max-height: 400px;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes zoomIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .home-content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .image-area img {
+    max-height: 300px;
+  }
+}
+/* Optional spacing fix */
+.btn-group {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn-group .creative-btn {
+  padding: 12px 28px;
+  font-size: 16px;
+}
