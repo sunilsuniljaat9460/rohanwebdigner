@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #1e1e2f, #2c3e50);
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  position: relative;
+}
+
+h1 {
+  font-size: 8em;
+  margin: 0;
+  color: #ff4757;
+  animation: pulse 1.5s infinite;
+}
+
+.message {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.home-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #ff4757;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.home-btn:hover {
+  background: #e84118;
+}
+
+.ghost {
+  width: 100px;
+  height: 100px;
+  background: url('https://i.imgur.com/6RMhx.gif') no-repeat center center;
+  background-size: contain;
+  margin: 30px auto 0;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
