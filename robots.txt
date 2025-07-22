@@ -1,0 +1,6 @@
+# robots.txt for rohanwebdigner
+
+User-agent: *
+Disallow:
+
+Sitemap: https://sunilsuniljaat9460.github.io/rohanwebdigner/sitemap.xml
